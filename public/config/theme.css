@@ -1,0 +1,18 @@
+:root {
+  --primary: #12162d;
+  --primary-text: #ffffff;
+  --secondary: #8cff9b;
+  --secondary-text: #12173d;
+  --accent: #ac3232;
+  --accent-text: #ffffff;
+}
+
+.footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(235, 195, 64);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
