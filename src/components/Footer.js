@@ -4,7 +4,7 @@ const Footer = () => (
   <div className="footer">
     <p style={{
               fontSize: "22px",
-            }}>Polygirls Weird Dapp Web</p>
+            }}>PolyGirls Weird Dapp Web</p>
   </div>
 );
 
