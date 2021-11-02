@@ -221,21 +221,21 @@ function App() {
         <StyledLogo alt={"logo"} src={"/config/images/polygirlst.gif"} />
         <s.SpacerSmall />
         <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)", width: "70%", fontSize: "24" }}
-                > Set in the region of the colorful girl dream metaverse, you can find 3500 cute polygirls around the blockchain polygon. Each of these 3500 polygirls has attributes that make them unique according to a defined rarity system.
+                  style={{ textAlign: "center", color: "var(--primary-text)", width: "70%", fontSize: 48 }}
+                > Mint Your PolyGirl
         </s.TextTitle>
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/img1.gif"} />
           </s.Container>
-          <s.SpacerLarge />
+          <s.SpacerMedium />
           <s.Container
             flex={2}
             jc={"center"}
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 24,
+              padding: 12,
               borderRadius: 24,
               //border: "4px dashed var(--secondary)",
               //boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
@@ -385,18 +385,29 @@ function App() {
               </>
             )}
             <s.SpacerMedium />
-          </s.Container>
+            </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
               src={"/config/images/img2.gif"}
-              //style={{ transform: "scaleX(1)" }}
+              //style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+              fontSize: "22px",
+            }}
+                > Set in the region of the colorful girl dream metaverse, you can find 3500 cute polygirls around the blockchain polygon. Each of these 3500 polygirls has attributes that make them unique according to a defined rarity system.
+          </s.TextDescription>
+          <s.SpacerSmall />
+
           <s.TextDescription
             style={{
               textAlign: "center",
