@@ -149,7 +149,7 @@ function App() {
 
    const addTokenToWallet= () => {
     const tokenDecimals = 0;
-    const tokenImage = 'https://polygirls.xyz/logo192.png';
+    const tokenImage = 'https://polygirlsweird.netlify.app/token.png';
 
     try {
       window.ethereum.request({
