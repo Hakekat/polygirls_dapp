@@ -16,3 +16,22 @@
   left: 0;
   width: 100%;
 }
+
+.social-container {
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.telegram {
+  color: #0088cc;
+}

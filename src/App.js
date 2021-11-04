@@ -5,6 +5,7 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import Footer from './components/Footer';
+import SocialFollow from "./SocialFollow";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -18,15 +19,9 @@ export const StyledButton = styled.button`
   color: var(--secondary-text);
   width: 100px;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  :active {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-  }
 `;
+
+
 
 export const StyledRoundButton = styled.button`
   padding: 10px;
@@ -90,6 +85,20 @@ export const StyledLink = styled.a`
   color: var(--secondary);
   text-decoration: none;
 `;
+
+export const StyledIcon = styled.img`
+  border-radius: 100%;
+  background-color: var(--accent);
+  width: 32px;
+  @media (min-width: 100px) {
+    width: 32px;
+  }
+  @media (min-width: 100px) {
+    width: 32px;
+  }
+  transition: width 0.5s;
+`;
+
 
 function App() {
   const dispatch = useDispatch();
@@ -221,8 +230,8 @@ function App() {
         <StyledLogo alt={"logo"} src={"/config/images/polygirlst.gif"} />
         <s.SpacerSmall />
         <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--primary-text)", width: "70%", fontSize: 48 }}
-                > Mint Your PolyGirl
+                  style={{ textAlign: "center", fontWeight: "bold", color: "var(--primary-text)", width: "70%", fontSize: 48 }}
+                > Mint Your PolyGirls
         </s.TextTitle>
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -431,7 +440,20 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
+          <s.SpacerMedium/>
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+              fontWeight: "bold",
+              fontSize: "48px",
+            }}
+          >
+            Follow US
+          </s.TextDescription>
         </s.Container>
+        <SocialFollow />
+        <s.SpacerSmall />
       </s.Container>
       <s.SpacerMedium />
       <s.SpacerMedium />
